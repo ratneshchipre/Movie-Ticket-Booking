@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./assets/movie-booking-icon.png">
+    <link rel="stylesheet" href="./styles/seat.css">
+    <title>Movie Ticket Booking App - Seat Booking</title>
+</head>
+<body>
+
+    <div class="layout-footer">
+
+        <div class="seat-layout">
+
+            <div class="seat-status">
+                <div class="status-item">Available</div>
+                <div class="status-item">Booked</div>
+                <div class="status-item">Selected</div>
+            </div>
+    
+            <div class="all-seats">
+                <input type="checkbox" name="tickets" id="s1">
+                <label for="s1" class="seat booked"></label>
+            </div>
+    
+        </div>
+
+        <div class="total">
+
+            <div class="tickets">
+                <p><span id="ticket-num"></span> tickets</p>
+                <p>Rs.<span id="ticket-price"></span></p>
+            </div>
+
+            <button class="proceed">Proceed</button>
+
+        </div>
+
+    </div>
+
+    <div class="ticket-confirm-msg">
+
+        <p class="msg-heading">Confirm your ticket</p>
+
+        <p class="msg-1"></p>
+        <p class="msg-2"></p>
+
+        <div class="action">
+
+            <button class="cancel">Cancel</button>
+            <button class="book">Book</button>
+            
+        </div>
+
+    </div>
+
+    <script type="module" src="./scripts/seats.js" defer></script>
+</body>
+</html>

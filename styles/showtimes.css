@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FEFFFE;
+    --secondary-color: #FF101F;
+    --tertiary-color: #0C080A;
+    --rating-color: #ffd000;
+    --bg-color: rgb(232, 232, 232);
+    --grey-color: #474545;
+    --btn-color: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.show-details-header {
+    width: 65rem;
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.show-dates {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    column-gap: 2rem;
+}
+
+.date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+    font-weight: 550;
+    width: 4rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding:0.8rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+} 
+
+.date-box-1:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.date-box-2:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.date-box-3:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.date-box-4:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.date-box-5:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.show-screening-details {
+    width: 65rem;
+    height: auto;
+    background-color: var(--primary-color);
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 2rem 2.5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.theatre-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 2.2rem;
+}
+
+.theatre-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.theatre-name {
+    margin-right: 4rem;
+}
+
+.theatre-name p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.show-timings {
+    display: flex;
+    column-gap: 1rem;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: rgba(197, 255, 197, 0.1);
+    border: 1.5px solid var(--btn-color); 
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1060px) {
+    .show-details-header {
+        width: 55rem;
+    }
+
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 2rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+    }
+
+    .show-screening-details {
+        width: 55rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 2rem 2.5rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.2rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.8rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.4rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .show-details-header {
+        width: 45rem;
+    }
+    
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 2rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+    }
+
+    .show-screening-details {
+        width: 45rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 2rem 2.5rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.2rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.8rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.35rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .show-details-header {
+        width: 37rem;
+    }
+    
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 2rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+    }
+
+    .show-screening-details {
+        width: 37rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 2rem 2.5rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.2rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.8rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.35rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .show-details-header {
+        width: 30rem;
+    }
+
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 1rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .show-screening-details {
+        width: 30rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 1.5rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.8rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.6rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.4rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .show-details-header {
+        width: 25rem;
+    }
+    
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 1rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .show-screening-details {
+        width: 25rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 1.5rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.8rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.6rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.3rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .show-details-header {
+        width: 22rem;
+    }
+    
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 1rem;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        padding-bottom: 0.5rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .show-screening-details {
+        width: 22rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 1.5rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.8rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.6rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.3rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.1rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .show-details-header {
+        width: 20rem;
+    }
+    
+    .show-dates {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        column-gap: 1rem;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        padding-bottom: 0.5rem;
+    }
+    
+    .date-box-1, .date-box-2, .date-box-3, .date-box-4, .date-box-5 {
+        width: 4rem;
+        padding:0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .show-screening-details {
+        width: 20rem;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 1.5rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+    
+    .theatre-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.8rem;
+    }
+    
+    .theatre-2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-top: 1.6rem;
+    }
+    
+    .theatre-name {
+        margin-right: 4rem;
+    }
+    
+    .theatre-name p {
+        font-size: 1.3rem;
+    }
+    
+    .show-timings {
+        display: flex;
+        column-gap: 1rem;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+    
+    .timing-1 button, .timing-2 button, .timing-3 button, .timing-4 button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.1rem;
+    }
+}
